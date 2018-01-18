@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TesteContaEspecial {
+	
+	@Before
+	public void inicializaConta() {
+		ContaCorrente cc = new ContaCorrente();
+		cc.depositar(200);
+	}
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

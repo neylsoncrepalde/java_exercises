@@ -1,0 +1,20 @@
+
+public class Carro extends CarroDeCorrida {
+	
+	private int potencia;
+	
+	public Carro(int potencia, int velocidadeMaxima, String nome) {
+		super(velocidadeMaxima, nome)
+		this.potencia = potencia;
+		
+	}
+
+	@Override
+	public void acelerar() {
+		velocidade += potencia;
+		if (velocidade > velocidadeMaxima)
+			velocidade = velocidadeMaxima;
+	}
+	
+	
+}

@@ -1,0 +1,33 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class testeCarros {
+
+	@Test
+	public void testeVelocidade() {
+		Carro c = new Carro();
+		c.potencia = 10;
+		c.acelerar();
+		assertEquals(10, c.getVelocidade());
+	}
+	
+	@Test
+	public void testeFrear() {
+		Carro c = new Carro();
+		c.potencia = 10;
+		c.acelerar();
+		c.frear();
+		assertEquals(5, c.getVelocidade());
+	}
+	
+	@Test
+	public void testeFrearDois() {
+		Carro c = new Carro();
+		c.potencia = 10;
+		c.acelerar();
+		c.frear();
+		assertEquals(10,c.getVelocidade());
+	}
+
+}

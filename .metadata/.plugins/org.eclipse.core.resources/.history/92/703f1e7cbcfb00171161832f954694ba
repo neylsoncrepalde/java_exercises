@@ -1,0 +1,6 @@
+
+public class PaiDeTodos {
+	public PaideTodos() {
+		System.out.println("Construtor Pai de Todos.");
+	}
+}

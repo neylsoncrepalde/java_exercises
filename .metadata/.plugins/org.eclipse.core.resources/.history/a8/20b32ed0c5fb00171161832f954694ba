@@ -1,0 +1,24 @@
+
+public class CarroMulti extends CarroDeCorrida {
+	
+	private double potencia
+	
+	public CarroMulti(int velocidadeMaxima, double potencia, String nome) {
+		super(velocidadeMaxima, nome);
+		if (potencia > 1 && potencia < 2) {
+			this.potencia = potencia;
+		} else {
+			this.potencia = 1.5;
+		}
+		
+	}
+
+	@Override
+	public void acelerar() {
+		velocidade *= potencia;
+		if (velocidade > velocidadeMaxima)
+			velocidade = velocidadeMaxima;
+
+	}
+
+}

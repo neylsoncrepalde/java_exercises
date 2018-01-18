@@ -1,0 +1,27 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AntesDepois {
+	
+	@Before
+	void before() {
+		
+	}
+
+	@Test
+	void test1() {
+		System.out.println("Teste 1");
+	}
+	
+	@Test
+	void test2() {
+		System.out.println("Teste 2");
+	}
+	
+	@Test
+	void test3() {
+		System.out.println("Teste 3");
+	}
+
+}

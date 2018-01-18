@@ -1,0 +1,20 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Carro c = new Carro();
+		
+		c.nome = "Cadilac";
+		c.potencia = 10;
+		
+		c.acelerar();
+		c.acelerar();
+		c.acelerar();
+		c.imprimir();
+		
+		c.frear();
+		c.imprimir();
+
+	}
+
+}

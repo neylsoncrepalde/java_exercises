@@ -1,0 +1,8 @@
+
+public class ContaEspecial extends ContaCorrente {
+	int limite;
+	
+	ContaEspecial(int limite){
+		this.limite = limite;
+	}
+}

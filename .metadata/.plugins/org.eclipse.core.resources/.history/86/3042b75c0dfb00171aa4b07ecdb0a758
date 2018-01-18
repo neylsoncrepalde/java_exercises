@@ -1,0 +1,35 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class Testes {
+	
+	@Before
+	public void inicializaConta() {
+		ContaCorrente cc = new ContaCorrente();
+	}
+
+	@Test
+	public void deposito() {
+		cc.depositar(200);
+		assertEquals(200, cc.saldo);
+	}
+	
+	@Test
+	public void saque() {
+		cc.depositar(200);
+		int valorSacado = cc.sacar(50);
+		assertEquals(150, cc.saldo);
+		assertEquals(50, valorSacado);
+	}
+	
+	@Test
+	public void saqueMaior() {
+		cc.depositar(200);
+		int valorSacado = cc.sacar(250);
+		assertEquals(200, cc.saldo);
+		assertEquals(0, valorSacado);
+	}
+
+}

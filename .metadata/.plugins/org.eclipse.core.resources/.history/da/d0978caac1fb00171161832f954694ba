@@ -1,0 +1,33 @@
+
+public class Carro {
+	private int potencia;
+	private int velocidade;
+	private int velocidadeMaxima;
+	private String nome;
+	
+	
+	
+	public Carro(int potencia, int velocidadeMaxima, String nome) {
+		this.potencia = potencia;
+		this.velocidadeMaxima = velocidadeMaxima;
+		this.nome = nome;
+		this.velocidade = 0;
+	}
+
+	void acelerar() {
+		velocidade += potencia;
+	}
+	
+	void frear() {
+		velocidade = velocidade / 2;
+	}
+	
+	int getVelocidade() {
+		return velocidade;
+	}
+	
+	void imprimir() {
+		System.out.println("O carro "+nome+" está à velocidade de "+
+				getVelocidade()+" km/h.");
+	}
+}
