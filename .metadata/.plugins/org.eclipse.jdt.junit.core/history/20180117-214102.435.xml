@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteCarroSoma" project="Carros" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="TesteCarroSoma" time="0.0">
-    <testcase name="testeFrear" classname="TesteCarroSoma" time="0.0"/>
-    <testcase name="testeFrearAteZero" classname="TesteCarroSoma" time="0.0"/>
-    <testcase name="testeVelocidade" classname="TesteCarroSoma" time="0.0"/>
-    <testcase name="acelerarAteMaximo" classname="TesteCarroSoma" time="0.0"/>
-  </testsuite>
-</testrun>
